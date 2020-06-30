@@ -1,0 +1,37 @@
+{
+  "name": "i-restful-web-services",
+  "version": "0.0.1",
+  "description": "pluralsight -  RESTful Web Services with Node.js and Express (Jonathan Mills)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "RHG-CRUD-API"
+  },
+  "author": "Erik Greene <rhgreene110@mac.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.9.10"
+  }
+}
